@@ -1,14 +1,14 @@
 #include "pmw3610.dtsi"
 #include "split_input.dtsi"
-#include "simply_adept.dtsi"
-#include "simply_adept-layouts.dtsi"
+#include "totem.dtsi"
+#include "totem-layouts.dtsi"
 #include <input/processors/xyz.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <behaviors/input_gestures_accel.dtsi>
 #include <input/processors/report_rate_limit.dtsi>
 
 &default_transform {
-	col-offset = <34>;
+	row-offset = <5>;
 };
 
 &spi0 {

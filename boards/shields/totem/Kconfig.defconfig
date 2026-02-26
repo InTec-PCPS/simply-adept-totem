@@ -1,13 +1,13 @@
-if SHIELD_SIMPLY_ADEPT_LEFT || SHIELD_SIMPLY_ADEPT_RIGHT || SHIELD_SIMPLY_ADEPT_DONGLE || SHIELD_SIMPLY_ADEPT_TRACKBALL
+if SHIELD_TOTEM_LEFT || SHIELD_TOTEM_RIGHT || SHIELD_TOTEM_DONGLE || SHIELD_TOTEM_TRACKBALL
 config ZMK_SPLIT
     default y
 config ZMK_POINTING
     default y
 endif
 
-if SHIELD_SIMPLY_ADEPT_DONGLE
+if SHIELD_TOTEM_DONGLE
 config ZMK_KEYBOARD_NAME
-    default "Simply Adept"
+    default "Totem"
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 # Set this to the number of peripherals your dongle will have.
@@ -16,7 +16,7 @@ config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
     default 3
 endif
 
-if SHIELD_SIMPLY_ADEPT_TRACKBALL
+if SHIELD_TOTEM_TRACKBALL
 config SPI
     default y
 endif
